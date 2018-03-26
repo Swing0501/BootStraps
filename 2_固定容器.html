@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<style>
+div[class*='col-']{background:#666; border:1px #00F solid; color:white; height:50px;}
+</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 当超出阈值的分辨率的时候，会变成竖列 -->
+		<div class="row">
+			<div class="col-lg-1">col-lg-1</div>
+			<div class="col-lg-11">col-lg-11</div>
+		</div>
+		<!-- 不足12的时候不会填满，只会占据该有的列数 -->
+		<div class="row">
+			<div class="col-lg-3">col-lg-3</div>
+			<div class="col-lg-4">col-lg-4</div>
+		</div>
+		<!-- 超出12的时候会自动换行 -->
+		<div class="row">
+			<div class="col-lg-6">col-lg-6</div>
+			<div class="col-lg-6">col-lg-6</div>
+			<div class="col-lg-6">col-lg-6</div>
+		</div>
+		<!-- 阈值大于1200 	大屏幕-->
+		<div class="row">
+			<div class="col-lg-4">col-lg-4</div>
+			<div class="col-lg-4">col-lg-4</div>
+			<div class="col-lg-4">col-lg-4</div>
+		</div>
+		<!-- 阈值在1200与992之间 	中等屏幕-->
+		<div class="row">
+			<div class="col-md-4">col-md-4</div>
+			<div class="col-md-4">col-md-4</div>
+			<div class="col-md-4">col-md-4</div>
+		</div>
+		<!-- 阈值在992与768之间 	ipad-->
+		<div class="row">
+			<div class="col-sm-4">col-sm-4</div>
+			<div class="col-sm-4">col-sm-4</div>
+			<div class="col-sm-4">col-sm-4</div>
+		</div>
+		<!-- 阈值小于768 	移动端-->
+		<div class="row">
+			<div class="col-xs-4">col-xs-4</div>
+			<div class="col-xs-4">col-xs-4</div>
+			<div class="col-xs-4">col-xs-4</div>
+		</div>
+
+	</div>
+</body>
+</html>

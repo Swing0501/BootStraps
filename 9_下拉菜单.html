@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<style>
+.my-btnStyle button{ width:85px; height:50px; border:none; background:#f6f8f8;}
+.my-btnStyle .dropdown-menu img{ margin:5px;}
+.my-btnStyle .dropdown-menu{ animation:.3s linear fadeIn;}
+@keyframes fadeIn{
+	0%{ opacity:0; transform:translateY(-20px);}
+	100%{ opacity:1; transform:translateY(0px);}
+}
+</style>
+</head>
+<body>
+   <!--  data-toggle="dropdown"
+      	 	data-*: js交互的触发器 
+   	-toggle：点击切换
+   	dropdown: 相当于js的方法名
+   
+   aria-expanded="true"
+   aria-haspopup="true" 
+   role="menu"
+   aria（行为描述） role（状态描述）:是针对特殊人群的语音之类的
+   aria-haspopup = "true"：语音播报按钮下有弹出选项，语音弹出内容
+   aria-haspopup = "false"：按钮下没有弹出选项
+   aria-expanded = "true"：语音播报下拉菜单展示状态
+   aria-expanded = "false"：语音播报下拉菜单隐藏状态
+   aria-labelledby = id:点击就会播报菜单 -->
+   <!-- 下拉菜单打开 open默认关闭 -->
+    <div class="row" style="height:200px;">
+    	<div class="col-lg-4">
+        	<div class="dropdown open">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- pull-right：整体右浮动 -->
+        <div class="col-lg-4">
+        	<div class="dropdown  pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- btn-block：下拉按钮块级 dropdown-menu-right：下拉菜单靠右 -->
+        <div class="col-lg-4">
+        	<div class="dropdown ">
+                <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+    <!-- 下拉菜单改成和父级一样的宽度：ul：btn-block或者更改style：width
+    下拉菜单文字居中：li: text-center-->
+    	<div class="col-lg-4">
+        	<div class="dropdown ">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu btn-block" style="width:400px;">
+                    <li class="text-center"><a href="#">Action</a></li>
+                    <li class="text-center"><a href="#">Another action</a></li>
+                    <li class="text-center"><a href="#">Something else here</a></li>
+                    <li class="text-center"><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+		<!-- 
+		下拉才但头部分割：添加兄弟节点li:dropdown-header
+		添加兄弟节点分割线：li:divider 
+		-->
+        <div class="col-lg-4">
+        	<div class="dropdown  pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                	<li class="dropdown-header">第一部分</li>
+                    <li class="active"><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">第二部分</li>
+                    <li class="disabled"><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 下拉菜单向上：dropup -->
+        <div class="col-lg-4">
+        	<div class="dropup ">
+                <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	
+	<div class="dropdown my-btnStyle">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Plugins
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="/categories/32/wordpress-plugins">
+		                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+		                  <span>Wordpress</span>
+		                </a></li>
+            <li><a href="/categories/32/wordpress-plugins">
+		                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+		                  <span>Wordpress</span>
+		                </a></li>
+                        <li><a href="/categories/32/wordpress-plugins">
+		                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+		                  <span>Wordpress</span>
+		                </a></li>
+                        <li><a href="/categories/32/wordpress-plugins">
+		                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+		                  <span>Wordpress</span>
+		                </a></li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

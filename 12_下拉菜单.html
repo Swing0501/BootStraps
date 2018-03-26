@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.my-btnStyle button{ width:85px; height:50px; border:none; background:#f6f8f8;}
+.my-btnStyle .dropdown-menu img{ margin:5px;}
+.my-btnStyle .dropdown-menu{ animation:.3s linear fadeIn;}
+@keyframes fadeIn{
+	0%{ opacity:0; transform:translateY(-20px);}
+	100%{ opacity:1; transform:translateY(0px);}
+}
+</style>
+</head>
+
+<body style="height:2000px;">
+<div class="container">
+	<br><br>
+    <div class="row">
+    	<div class="col-lg-4">
+        	<div class="dropdown my-btnStyle">
+                <button class="btn btn-default dropdown-toggle" type="button">
+                    Plugins
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+        	<div class="dropdown my-btnStyle">
+                <button class="btn btn-default dropdown-toggle" type="button">
+                    Plugins
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                </ul>
+            </div>
+        </div>
+		<!--data-toggle="dropdown"：对之前的没有影响
+		data-target=".dropdown" ：点击全显示,可以控制全局，都具备data-toggle="dropdown"的特性-->		
+        <div class="col-lg-4">
+        	<div class="dropdown my-btnStyle">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-target=".dropdown">
+                    Plugins
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                    <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                                <li><a href="/categories/32/wordpress-plugins">
+                                 <img width="16" height="16" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png" class="m-r-sm">
+                                  <span>Wordpress</span>
+                                </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+   
+</div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+$('.dropdown-toggle').dropdown();
+//点击屏幕不会隐藏
+//多个下拉菜单互不影响
+
+//$('.dropdown-toggle').dropdown('toggle');
+//菜单显示的时候，调用此方法就隐藏
+//菜单隐藏的时候，调用此方法就显示
+
+//配置   {}
+//方法     ''
+//自定义事件   on
+
+//菜单显示前触发的事件
+/*$('.dropdown').on('show.bs.dropdown',function(){
+	alert(1);
+});*/
+
+//菜单显示时触发的事件
+/*$('.dropdown').on('shown.bs.dropdown',function(){
+	alert(1);
+});
+
+//菜单隐藏前触发的事件
+$('.dropdown').on('hide.bs.dropdown',function(){
+	alert(1);
+});
+
+//菜单隐藏后触发的事件
+$('.dropdown').on('hidden.bs.dropdown',function(){
+	alert(1);
+});*/
+
+</script>
+</html>
